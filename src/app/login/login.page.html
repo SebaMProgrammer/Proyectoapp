@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Inicio de sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <label>Usuario</label>
+  <ion-input type="text" placeholder="Ingrese su nombre de Usuario"></ion-input>
+
+<label>Contraseña</label>
+  <ion-input type="password" label="Clave" placeholder="******"></ion-input>
+
+  <ion-button [routerLink]="['/inicio']">Entrar</ion-button>
+
+  <ion-button expand="full" (click)="irARestablecerCon()">Reestablecer Contraseña</ion-button>
+</ion-content>
